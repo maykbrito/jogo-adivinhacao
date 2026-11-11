@@ -19,6 +19,7 @@ function avaliarTentativas(tentativas) {
 }
 
 function jogar() {
+  alert('Bem-vindo ao jogo de adivinhação!')
   const numeroSecreto = Math.floor(Math.random() * 100) + 1
   let tentativas = 0
   let jogando = true
