@@ -23,6 +23,7 @@ function jogar() {
   const numeroSecreto = Math.floor(Math.random() * 100) + 1
   let tentativas = 0
   let jogando = true
+  let chutes = ''
   while (jogando) {
     const resposta = prompt('Qual é o seu chute? (1 a 100)')
     if (resposta === null) {
@@ -31,6 +32,7 @@ function jogar() {
     } else {
       const chute = Number(resposta)
       tentativas = tentativas + 1
+      chutes = chutes + ' ' + chute
       if (chute === numeroSecreto) {
         alert('Acertou! O número era ' + numeroSecreto + '. Tentativas: ' + tentativas + '. ' + avaliarTentativas(tentativas))
         jogando = false
@@ -39,4 +41,5 @@ function jogar() {
       }
     }
   }
+  alert('Seus chutes:' + chutes)
 }
