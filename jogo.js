@@ -23,7 +23,7 @@ function jogar() {
   let tentativas = 0
   let jogando = true
   while (jogando) {
-    const resposta = prompt('Chute um número de 1 a 100')
+    const resposta = prompt('Qual é o seu chute? (1 a 100)')
     if (resposta === null) {
       alert('Jogo encerrado. O número era ' + numeroSecreto + '.')
       jogando = false
