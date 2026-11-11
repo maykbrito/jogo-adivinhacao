@@ -38,6 +38,9 @@ function jogar() {
       if (chute === numeroSecreto) {
         alert('Acertou! O número era ' + numeroSecreto + '. Tentativas: ' + tentativas + '. ' + avaliarTentativas(tentativas))
         jogando = false
+      } else if (tentativas === 10) {
+        alert('Suas tentativas acabaram. O número era ' + numeroSecreto + '.')
+        jogando = false
       } else {
         alert(darDica(chute, numeroSecreto))
       }
