@@ -29,6 +29,8 @@ function jogar() {
     if (resposta === null) {
       alert('Jogo encerrado. O número era ' + numeroSecreto + '.')
       jogando = false
+    } else if (Number(resposta) < 1 || Number(resposta) > 100) {
+      alert('Chute inválido: escolha de 1 a 100')
     } else {
       const chute = Number(resposta)
       tentativas = tentativas + 1
